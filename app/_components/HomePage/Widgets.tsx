@@ -1,11 +1,13 @@
 "use client";
 
-import { get } from "http";
 import { useEffect, useState } from "react";
 
 type WeatherData = {
   location: object;
-  current: object;
+  current: {
+    temp_c: number;
+    wind_kph: number;
+  };
 };
 
 const Widgets = () => {
