@@ -63,13 +63,15 @@ const Articles = () => {
 
 const MainBody = () => {
   return (
-    <div className="bg-white h-screen w-full overflow-hidden flex ">
+    <div className="bg-white h-screen w-full overflow-hidden flex">
       <SideBar />
-      <div className="overflow-y-auto flex-1 flex flex-col [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-        <MainBodyHeader />
-        <Articles />
+      <div className="flex-1 flex overflow-y-auto">
+        <div className="overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <MainBodyHeader />
+          <Articles />
+        </div>
+        <Widgets />
       </div>
-      <Widgets />
     </div>
   );
 };

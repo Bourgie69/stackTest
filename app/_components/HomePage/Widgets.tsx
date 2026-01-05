@@ -26,7 +26,7 @@ const Widgets = () => {
   }, []);
 
   return (
-    <div className="flex rounded-2xl bg-orange-300 h-100 w-60 p-5 m-5">
+    <div className="flex rounded-2xl bg-orange-300 h-100 w-60 min-w-50 p-5 m-5">
       <div className="flex flex-col">
         <p>{data?.current.temp_c}C</p>
         <p>{data?.current.wind_kph}kph</p>

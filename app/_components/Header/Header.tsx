@@ -7,7 +7,7 @@ const Header = () => {
     <div
       className="bg-white flex items-center justify-between h-15 px-5 w-full border-b"
     >
-      <p className="text-black">StackOverflow</p>
+      <p className="text-black">123</p>
       <div className="flex border rounded-lg items-center py-1 h-10 px-2 w-[60%]">
         <SearchIcon />
         <Input
